@@ -14,19 +14,19 @@ def staat(qq):
   url = "https://api.telegram.org/bot"+BOTT+"/sendphoto"
   data = {
     "chat_id": str(qq),
-    "photo": "https://telegra.ph/file/444f0805649cfcdf19112.jpg",
-    "caption": "Get instant access to Corona in Sri Lanka 📊 .  Automatically retrieve the latest corona information after adding it to the @SLCovid19slbzonebot Group 🦠 . Use /help for more information. @sl_bot_zone ",
+    "photo": "https://telegra.ph/file/43e4e105f94ad2e9e6e15.jpg",
+    "caption": "Get instant access to Corona in Sri Lanka 📊 .  Automatically retrieve the latest corona information after adding it to the @sk_covid_update_bot Group 🦠 . Use /help for more information. @hackingsinhalasl ",
     "parse_mode": "HTML",
     "reply_markup": {
         "inline_keyboard": [
             [
                 {
                     "text": " 💎 Youtube  ",
-                    "url": "https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA"
+                    "url": "https://www.youtube.com/c/SKTechProfessional"
                 }, 
                 {
-                    "text": " 🔔 Channel",
-                    "url": "https://t.me/sl_bot_zone"
+                    "text": " 🔔 Telegram Channel",
+                    "url": "https://t.me/hackingsinhalasl"
                 }
             ]
         ]
