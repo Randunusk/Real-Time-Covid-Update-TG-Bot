@@ -53,7 +53,7 @@ def staa():
 
     textt = str(
                     '<b>CURRENT SITUATION</b>' + '\n' + '\n' + '<b>' +
-                    update_date_time + ' ```(Last Update Time)``` </b>' + '\n' + '\n' +
+                    update_date_time + ' (Last Update Time & Date) </b>' + '\n' + '\n' +
                     '<b>🇱🇰 Situation in Sri Lanka</b>' + '\n' + '\n'  +
                     '🤒 Number of confirmed patients (cumulative) = ' + '<code>' +
                     local_total_cases + '</code>' + '\n' +
