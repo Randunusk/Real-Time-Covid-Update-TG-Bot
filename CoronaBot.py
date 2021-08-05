@@ -15,7 +15,7 @@ def staat(qq):
   data = {
     "chat_id": str(qq),
     "photo": "https://telegra.ph/file/43e4e105f94ad2e9e6e15.jpg",
-    "caption": "Get instant access to Corona in Sri Lanka 📊 .  Automatically retrieve the latest corona information after adding it to the @sk_covid_update_bot Group 🦠 . Use /help for more information. @hackingsinhalasl ",
+    "caption": "Get instant access to Corona in Sri Lanka\n\n📊 Automatically retrieve the latest corona information after adding it to the @sk_covid_update_bot Group\n\n🦠 Use /help for more information.\n\n@hackingsinhalasl ",
     "parse_mode": "HTML",
     "reply_markup": {
         "inline_keyboard": [
@@ -53,7 +53,7 @@ def staa():
 
     textt = str(
                     '<b>CURRENT SITUATION</b>' + '\n' + '\n' + '<b>' +
-                    update_date_time + ' now </b>' + '\n' + '\n' +
+                    update_date_time + ' ```(Last Update Time)``` </b>' + '\n' + '\n' +
                     '<b>🇱🇰 Situation in Sri Lanka</b>' + '\n' + '\n'  +
                     '🤒 Number of confirmed patients (cumulative) = ' + '<code>' +
                     local_total_cases + '</code>' + '\n' +
@@ -71,7 +71,7 @@ def staa():
                     global_deaths + '</code>' + '\n' + '🙂 Healed number = ' '<code>'  +
                     global_recovered + '</code>' + '\n' + '\n' + '\n' +
                     '✅ All information is provided by the government and reputable sources' + '\n' +
-                    '~ @sl_bot_zone 🇱🇰 ~')
+                    '~ @hackingsinhalasl  🇱🇰 ~')
     return textt
 
 
@@ -85,7 +85,7 @@ def sta():
 @bot.on(events.NewMessage(pattern='/start'))
 async def start(event):
     staat(event.original_update.message.peer_id.user_id)
-    raise events.StopPropagation
+    raise events.StopPropagationy
 
 
 @bot.on(events.NewMessage(pattern='/corona'))
